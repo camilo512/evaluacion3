@@ -3,7 +3,8 @@ import MortyInfo from './MortyInfo';
 
 const MortyList = ({mortys}) => {
     return (
-        <div>
+        <div className='container'>
+            <div className='cards'>
             {
                 mortys?.map(residents =>(
                     <MortyInfo mortyUrl={residents} key={residents} />
@@ -12,6 +13,8 @@ const MortyList = ({mortys}) => {
                     </div> */
                 ))
             }
+            </div>
+        
         </div>
     );
 };

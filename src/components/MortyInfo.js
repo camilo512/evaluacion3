@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import '../App.css';
 
 const MortyInfo = ({mortyUrl}) => {
 
@@ -12,15 +13,21 @@ const MortyInfo = ({mortyUrl}) => {
 
     return (
         
-        <div >
-            <img src={card.image} alt="" />
-            <p>{card.name}</p>
+<div className='card'>
+<img className='card__img' src={card.image} alt="" />
+        <div className='data-info' >
+            
+            <h3>{card.name}</h3>
+            <hr />
+            <p className='subtitle__card' ></p>
             <p>origin:{card.origin?.name}</p>
-            <p>Episodes where appear:{card.episode?.length}</p>
-            
-            
-            {/* {mortyUrl} */}
+            <p className='subtitle__card'>Episodes where appear:</p>
+            <p>  {card.episode?.length}</p>
+             {/* {mortyUrl} */}
         </div>
+</div>
+
+      
     );
 };
 

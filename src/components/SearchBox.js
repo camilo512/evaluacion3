@@ -13,13 +13,13 @@ const SearchBox = ({setUbication}) => {
     }
     return (
 
-        <div>
-            <input 
+        <div className='header__search'>
+            <input className='header__search-input'
             type="text" 
             onChange={e => setubicationId(e.target.value)}
             value={ubicationId}
             />
-            <button onClick={searchUbication}>
+            <button className='header__search-button' onClick={searchUbication}>
                 Search
             </button>
         </div>

@@ -21,14 +21,22 @@ function App() {
 
 
     <div className="App">
-
-
+    
+    <div className='header'>
       <SearchBox setUbication={setUbication} />
+    </div>
 
+      <div className='container'>
+        <div className='location'>
         <h1>{ubication.name}</h1>
-        <p><b>Type: </b>{ubication.type}</p>
-        <p><b>Dimension: </b>{ubication.dimension}</p>
-        <p><b>Population: </b>{ubication.residents?.length}</p>
+        <ul className='location__list'>
+          <li cl><span className='lotation_list-subtitle'> </span>Type:{ubication.type}</li>
+          <li cl><span className='lotation_list-subtitle'> </span>Dimension{ubication.dimension}</li>
+          <li cl><span className='lotation_list-subtitle'> </span>Population:{ubication.residents?.length}</li>
+        </ul>
+        </div>
+      </div>
+
   
       <MortyList mortys={ubication.residents} />
 
