@@ -30,9 +30,9 @@ function App() {
         <div className='location'>
         <h1>{ubication.name}</h1>
         <ul className='location__list'>
-          <li cl><span className='lotation_list-subtitle'> </span>Type:{ubication.type}</li>
-          <li cl><span className='lotation_list-subtitle'> </span>Dimension{ubication.dimension}</li>
-          <li cl><span className='lotation_list-subtitle'> </span>Population:{ubication.residents?.length}</li>
+          <li cl><span className='lotation_list-subtitle'> </span>Type: {ubication.type}</li>
+          <li cl><span className='lotation_list-subtitle'> </span>Dimension: {ubication.dimension}</li>
+          <li cl><span className='lotation_list-subtitle'> </span>Population: {ubication.residents?.length}</li>
         </ul>
         </div>
       </div>
